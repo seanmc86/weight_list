@@ -1,0 +1,43 @@
+{
+	"data": [
+		{
+			"id": "1",
+			"createdAt": 1725868800000,
+			"name": "Upper body",
+			"sets": [
+				{
+					"exercise": "barbellRow",
+					"weightInKg": 15,
+					"repetitions": 12
+				},
+				{
+					"exercise": "benchPress",
+					"weightInKg": 50,
+					"repetitions": 8
+				}
+			]
+		},
+		{
+			"id": "2",
+			"createdAt": 1725955200000,
+			"name": "Trying new exercise, this is a long description",
+			"sets": [
+				{
+					"exercise": "shoulderPress",
+					"weightInKg": 20,
+					"repetitions": 10
+				},
+				{
+					"exercise": "deadlift",
+					"weightInKg": 80,
+					"repetitions": 6
+				},
+				{
+					"exercise": "squat",
+					"weightInKg": 60,
+					"repetitions": 6
+				}
+			]
+		}
+	]
+}
