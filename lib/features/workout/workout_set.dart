@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:weight_list/domain/models/exercises.dart';
 import 'package:weight_list/domain/models/workout_set.dart';
+import 'package:weight_list/ui/gap.dart';
 
 class SetCard extends StatelessWidget {
   const SetCard(
@@ -175,9 +176,7 @@ class _NewSetCardState extends State<NewSetCard> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 16,
-            ),
+            Gap.horizontalMedium(),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: Text('Rep count'),
@@ -192,9 +191,7 @@ class _NewSetCardState extends State<NewSetCard> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 16,
-            ),
+            Gap.verticalMedium(),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: Text(

@@ -5,6 +5,7 @@ import 'package:weight_list/domain/models/workout.dart';
 import 'package:weight_list/domain/models/workout_set.dart';
 import 'package:weight_list/features/workout/workout_set.dart';
 import 'package:weight_list/features/workout_history/viewmodel.dart';
+import 'package:weight_list/ui/gap.dart';
 
 class WorkoutDetails extends ConsumerWidget {
   /// Specify `workout` to load an existing workout, or leave out to add a new one
@@ -87,11 +88,11 @@ class _ExistingWorkoutDetailsState
           'Workout completed on ${widget.workout.date}',
           style: const TextStyle(fontSize: 18),
         ),
-        const SizedBox(
-          height: 32,
-        ),
+        Gap.verticalLarge(),
         Expanded(
           child: ListView(
+            // TODO: Extract all text buttons and set cards into new widgets
+            // so we don't nest as many optionals in one place
             children: [
               if (isEditing)
                 TextButton.icon(
@@ -230,9 +231,7 @@ class _NewWorkoutDetailsState extends ConsumerState<NewWorkoutDetails> {
           'Workout on ${dayAndMonth(DateTime.now())}',
           style: const TextStyle(fontSize: 18),
         ),
-        const SizedBox(
-          height: 32,
-        ),
+        Gap.verticalLarge(),
         TextButton.icon(
           onPressed: () {
             setState(() {

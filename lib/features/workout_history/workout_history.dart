@@ -24,8 +24,8 @@ class _WorkoutHistoryState extends ConsumerState<WorkoutHistory> {
 
   @override
   Widget build(BuildContext context) {
-    // "ref" is not passed as parameter anymore, but is instead a property of "ConsumerState".
-    // We can therefore keep using "ref.watch" inside "build".
+    // We can use "ref.watch" inside the build of a ConsumerStatefulWidget the
+    // same way ref is accessed in the build args of a stateless widget
     final workouts = ref.watch(workoutHistoryViewmodelProvider);
 
     return ListView(
