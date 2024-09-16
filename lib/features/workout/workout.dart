@@ -221,7 +221,7 @@ class NewWorkoutDetails extends ConsumerStatefulWidget {
 
 class _NewWorkoutDetailsState extends ConsumerState<NewWorkoutDetails> {
   final List<WorkoutSet> sets = [];
-  bool showNewSet = false;
+  bool showNewSet = true;
 
   @override
   Widget build(BuildContext context) {
